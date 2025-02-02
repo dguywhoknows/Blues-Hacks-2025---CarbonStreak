@@ -20,7 +20,7 @@
                     if (levelElement) {
                         levelElement.checked = true;
                     }
-                    usedCarbon = parseFloat(localStorage.getItem("carbonUsedDay"+x.toString()))
+                    usedCarbon = parseFloat(localStorage.getItem("carbonUsedDay"+x.toString()));
                     var multiplier = parseFloat(localStorage.getItem("multiplier" + x.toString()));
                     theCarbonBudget = "Your carbon budget is " + carbonBudget.toString() + " kilograms per day, and taking into account your selected level, it is " +(carbonBudget * multiplier).toString()+" kilograms per day. Today, you have used "+usedCarbon.toString()+" kilograms, meaning you have "+(carbonBudget*multiplier-usedCarbon).toString()+" kilograms left.";
                     streak = parseInt(localStorage.getItem("streak" + x.toString()));
