@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>CarbonStreak</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #899E8B;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2A4D14;
+            font-size: 4.0em;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            color: #67848E;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #2A4D14;
+            border: none;
+            color: #899E8B;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px 20px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .button:hover {
+            background-color: #67848E;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CarbonStreak!</h1>
+        <h3>Your Carbon, Your Future</h3>
+        <div>
+            <a href="login.html">
+                <button type="button" id="loginButton" class="button">Log In</button>
+            </a>
+            <a href="signup.html">
+                <button type="button" id="signupButton" class="button">Sign Up</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

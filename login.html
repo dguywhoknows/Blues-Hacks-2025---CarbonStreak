@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Log In</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #899E8B;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2A4D14;
+            font-size: 4.0em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        label {
+            color: #456990;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.75em;
+            font-weight: 750;
+            padding: 10px 24px;
+        }
+
+        input {
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 20px;
+            width: 250px
+        }
+
+        .button {
+            background-color: #2A4D14;
+            border: none;
+            color: #899E8B;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 5px 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 175px;
+            height: 40px;
+        }
+
+        .button:hover {
+            background-color: #67848E;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form onsubmit="login(event)">
+        <label for="logEmail">Email: </label><br>
+        <input type="text" id="logEmail" required><br><br>
+        <label for="logFName">First Name: </label><br>
+        <input type="text" id="logFName" required><br><br>
+        <label for="logLName">Last Name: </label><br>
+        <input type="text" id="logLName" required><br><br>
+        <label for="logPassword">Password: </label><br>
+        <input type="password" id="logPassword" required><br><br>
+        <button type="submit" class="button">Log In</button><br><br>
+    </form>
+    <a href="index.html">
+        <button type="button" class="button">Go Back Home</button>
+    </a>
+</body>
+</html>

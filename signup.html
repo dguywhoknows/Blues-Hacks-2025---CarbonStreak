@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #899E8B;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2A4D14;
+            font-size: 4.0em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        label {
+            color: #456990;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.75em;
+            font-weight: 750;
+            padding: 10px 24px;
+        }
+
+        input {
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 20px;
+            width: 250px
+        }
+
+        select {
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 40px;
+            width: 250px;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .button {
+            background-color: #2A4D14;
+            border: none;
+            color: #899E8B;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 5px 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 175px;
+            height: 40px;
+        }
+
+        .button:hover {
+            background-color: #67848E;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form onsubmit="signUp(event)">
+        <label for="signUpEmail">Email: </label><br>
+        <input type="email" id="signUpEmail" required><br><br>
+        <label for="signUpFName">First Name: </label><br>
+        <input type="text" id="signUpFName" required><br><br>
+        <label for="signUpLName">Last Name: </label><br>
+        <input type="text" id="signUpLName" required><br><br>
+        <label for="signUpPassword">Password: </label><br>
+        <input type="password" id="signUpPassword" required><br><br>
+        <label for="confirmPassword">Confirm Password: </label><br>
+        <input type="password" id="confirmPassword" required><br><br>
+        <label for="chooseCountry">Choose Your Country: </label><br>
+        <select id="country">
+            <option value="0">Australia</option>
+            <option value="1">Canada</option>
+            <option value="2">China</option>
+            <option value="3">France</option>
+            <option value="4">Germany</option>
+            <option value="5">India</option>
+            <option value="6">Japan</option>
+            <option value="7">Russian Federation</option>
+            <option value="8">United Kingdom</option>
+            <option value="9">United States</option>
+        </select><br><br>
+        <button type="submit" class="button">Sign Up</button>
+    </form><br>
+    <a href="index.html">
+        <button type="button" class="button">Go Back Home</button>
+    </a>
+</body>
+</html>

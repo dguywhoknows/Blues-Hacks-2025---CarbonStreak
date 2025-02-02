@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Carbon Tracker</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #899E8B;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2A4D14;
+            font-size: 4.0em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            color: #022B3A;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            word-wrap: break-word;
+            padding: 10px;
+        }
+
+        label {
+            color: #244A65;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.25em;
+            font-weight: 500;
+            padding: 10px 24px;
+        }
+
+        input {
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 20px;
+            width: 250px
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            width: 100%;
+        }
+
+        .column {
+            flex: 1; /* Makes each column take up equal space */
+            min-width: 150px; /* Prevents columns from shrinking too much */
+            max-width: 25%; /* Ensures four columns fit evenly */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #2A4D14;
+            border: none;
+            color: #899E8B;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 5px 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 175px;
+            height: 40px;
+        }
+
+        .button:hover {
+            background-color: #67848E;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Carbon Tracker</h1>
+    <h2>Please use positive integers, or else</h2>
+    <div class="row">
+        <div class="column" style="background-color: #62864b;">
+            <h2>Travel</h2>
+            <form onsubmit="travel()">
+                <label>Distance Travelled by Car (km): </label><input type="number" id="carTravel"><br><br>
+                <label>Distance Travelled by Plane (km): </label><input type="number" id="planeTravel"><br><br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <div class="column" style="background-color: #78918D;">
+            <h2>Energy Consumption</h2>
+            <form onsubmit="energyConsumption()">
+                <label>Monthly Electricity Usage (kWh): </label><input type="number" id="electricityUsage"><br><br>
+                <label>Monthly Natural Gas Usage (M^3): </label><input type="number" id="naturalGasUsage"><br><br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <div class="column" style="background-color: #67848E;">
+            <h2>Shopping</h2>
+            <form onsubmit="shopping()">
+                <label>Number of Clothing Items Bought: </label><input type="number" id="clothingItems"><br><br>
+                <label>Number of Electronic Items Bought: </label><input type="number" id="electronicItems"><br><br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <div class="column" style="background-color: #456990;">
+            <h2>Food</h2>
+            <form onsubmit="foodConsumption()">
+                <label>Daily Meat Consumption (kg): </label><input type="number" id="meatConsumption"><br><br>
+                <label>Daily Dairy Consumption (kg): </label><input type="number" id="dairyConsumption"><br><br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div><br><br><br>
+    <a href="mainApp.html">
+        <button type="button" class="button">Go Back Home</button>
+    </a>
+</body>
+</html>
